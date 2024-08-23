@@ -1,0 +1,67 @@
+body    {
+    margin: 0;
+}
+
+.main-container {
+    height:100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container    {
+   width: 360px;
+   text-align: center;
+}
+
+.card   {
+   background-color: #fff;
+   padding: 28px;
+   border-radius: 28px
+}
+
+.image-container    {
+
+}
+
+.profile-pic    {
+    width: 128px;
+    border-radius: 64px;
+}
+.handle {
+6    margin-top: 
+}
+
+.socials    {
+
+}
+
+.about  {
+}
+
+.button-container   {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+        
+}
+
+.btn-follow     {
+    width: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.btn-message    {
+    width: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
