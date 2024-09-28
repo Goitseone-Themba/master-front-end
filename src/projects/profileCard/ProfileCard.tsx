@@ -1,12 +1,15 @@
 import { useState } from "react"
-import './profileCard.css'
+import "./profileCard.css"
+import Facebook from './assets/Facebook.svg'
+import github from './assets/github.svg'
+import instagram from './assets/instagram.svg'
+import linkedin from './assets/linkedin.svg'
+import wave from './assets/wave.svg'
+import x from './assets/X.svg'
 
 export const ProfileCard = () => {
-
-    
     return (
         <>
-            ProfileCard
             <div className="main-container">
                 <div className="card-container">
                     <div className="card">
@@ -25,27 +28,27 @@ export const ProfileCard = () => {
                             <ul className="icon-list">
                                 <li>
                                     <a href="https://github.com/Goitseone-Themba" target="_blank">
-                                        <img src="./github.svg" alt="link to Themba's github profile" />
+                                        <img src={github} alt="link to Themba's github profile" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.linkedin.com/in/goitseone-themba-a58828291" target="_blank">
-                                        <img src="./linkedin.svg" alt="link to Themba's linkedin profile" />
+                                        <img src={linkedin} alt="link to Themba's linkedin profile" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://x.com/GoitseoneThemba" target="_blank">
-                                        <img src="./X.svg" alt="link to Themba's Twitter profile" />
+                                        <img src={x} alt="link to Themba's Twitter profile" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/goitseone.themba" target="_blank">
-                                        <img src="./Facebook.svg" alt="link to Themba's Facebook profile" />
+                                        <img src={Facebook} alt="link to Themba's Facebook profile" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.instagram.com/goitseone_roz_themba_/" target="_blank">
-                                        <img src="./instagram.svg" alt="link to Themba's instagram profile" />
+                                        <img src={instagram} alt="link to Themba's instagram profile" />
                                     </a>
                                 </li>
                             </ul>
@@ -63,7 +66,7 @@ export const ProfileCard = () => {
                             <a href="https://x.com/GoitseoneThemba" target="_blank">
                                 <button className="btn-follow">Follow</button>
                             </a>
-                            <a href="mailto: goitseonethemba@gmail.com">
+                            <a href="mailto: goitseonethemba@gmail.com" target="_blank">
                                 <button className="btn-message">Message</button>
                             </a>
                         </div>

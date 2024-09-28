@@ -13,7 +13,7 @@
 }
 
 .card   {
-    background: no-repeat url("./wave.svg");
+    background: no-repeat url("./assets/wave.svg");
     padding: 28px;
     border-radius: 28px;
     box-shadow: 0 1px 25px #dedede, 0 1px 25px #222;
