@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Masters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="author" content="Goitseone Themba">
+    <meta name="description" content="A coffee masters clone written by Goitseone Themba">
+    <meta name="keywords" content="Coffee Masters, Goitseone Themba, begginner frontend projects">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <img class="logo" src="assets/coffee_masters_logo.png" alt="coffee masters logo" />
+        <p class="title">coffee masters</p>
+    </nav>     
+    <section class="order-details">
+        <div class="items card">
+            <p class="card-title">ITEMS</p>
+        </div>
+        <div class="name card">
+            <p class="card-title">NAME</p>
+            <div class="order-name-group">
+                <label for="order-name" class="order-name-label">Name for order</label>
+                <input id="order-name" class="order-name-input" type="text" />
+            </div> 
+        </div>
+        <div class="payment card">
+            <p class="card-title">PAYMENT</p>
+            <div class="card-number-group">
+                <label for="card-number" class="card-number-label">Card Number</label>
+                <input id="card-number" class="card-number-input" type="text" />
+            </div>
+            <div class="cvv-number-group">
+                <label for="cvv-number" class="cvv-number-label">Cvv Number</label>
+                <input id="cvv-number" class="cvv-number-input" type="text" />
+            </div>
+        </div>
+    </section>
+    <section class="checkout" >
+        <div class="subtotal">
+            <p>Subtotal:<p>
+            <p>$9.65</p>
+        </div>
+        <div class="tax">
+            <p>Tax:</p>
+            <p>$0.82</p>
+        </div>
+        <div class="total">
+            <b>Total:</b>
+            <b>$10.47</b>
+        </div>
+    </section>
+    <button class="btn-order">Place order</button>
+</body>
+</html>

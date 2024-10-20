@@ -1,0 +1,178 @@
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    margin: 0px;
+    background-color: #fefefe;
+}
+
+.nav-bar {
+    background-color: #412315;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo {
+    width: 3%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title {
+    color: #d8cba1;
+    font-size: 24px;
+}
+
+.order-details {
+    height: 40%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 30% 15% 30% auto;
+    gap: 5%;
+    padding:5%;
+}
+
+.card {
+    background-color: #eee1d5;
+    border:none;
+    border-radius: 8px;
+    box-shadow: 0 1px 25px #dedede, 0 1px 9px #22222f;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-title {
+    color: #91653c;
+    font-size: 18px;
+}
+
+.items {
+   grid-row-start: 1;
+   grid-row-end: 4;
+}
+
+.name {
+   grid-column-start: 2;
+   grid-column-end: 4;
+   grid-row-start: 1;
+   grid-row-end: 2;
+}
+
+.order-name-group {
+   position: relative;
+   display: inline-block;
+}
+
+.order-name-label {
+     color: #91653c;
+     background-color: #eee1d5;
+     font-size: 16px;
+     position: absolute;
+     top: -10px;
+     left: 15px;
+}
+
+.order-name-input {
+    background-color: #eee1d5;
+    border-color: #91653c;
+    border-radius: 28px;
+    padding: 8px;
+}
+
+.payment {
+    display: block;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.card-number-group {
+    position: relative;
+   display: inline-block;
+}
+
+.card-number-label {
+     color: #91653c;
+     background-color: #eee1d5;
+     font-size: 16px;
+     position: absolute;
+     top: -10px;
+     left: 15px;
+}
+
+.card-number-input {
+    background-color: #eee1d5;
+    border-color: #91653c;
+    border-radius: 28px;
+    padding: 8px;
+}
+
+.cvv-number-group {
+    position: relative;
+    display: inline-block;
+}
+
+.cvv-number-label {
+     color: #91653c;
+     background-color: #eee1d5;
+     font-size: 16px;
+     position: absolute;
+     top: -10px;
+     left: 15px;
+}
+
+.cvv-number-input {
+    background-color: #eee1d5;
+    border-color: #91653c;
+    border-radius: 28px;
+    padding: 8px;
+}
+
+.checkout {
+    display: flex   ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 4%;
+}
+
+.subtotal {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tax {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-order {
+    display: block;
+    width: 80%;
+    height: 5%;
+    background-color: #deb993;
+    font-size: 18px;
+    border: none;
+    border-radius: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
