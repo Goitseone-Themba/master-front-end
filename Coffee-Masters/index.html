@@ -10,7 +10,7 @@
     <meta name="keywords" content="Coffee Masters, Goitseone Themba, begginner frontend projects">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">   
 </head>
 <body>
     <nav class="nav-bar">
@@ -20,6 +20,26 @@
     <section class="order-details">
         <div class="items card">
             <p class="card-title">ITEMS</p>
+            <ul class="item-list">
+                <li class="item three-column">
+                    <p class="quantity">1x</p>
+                    <p class="description"><b>Cappuccino</b></p>
+                    <p class="price"><b>$3.35</b></p>
+                    <p class="extra">Lite Foam</p>
+                </li>
+                <li class="item three-column">
+                    <p class="quantity">1x</p>
+                    <p class="description"><b>Cappuccino</b></p>
+                    <p class="price"><b>$3.85</b></p>
+                    <p class="extra">Light milk</p>
+                    <p class="extra">Double espresso</p>
+                </li>
+                <li class="item three-column">
+                    <p class="quantity">1x</p>
+                    <p class="description"><b>Croissant</b></p>
+                    <p class="extra">Butter</p>
+                </li>
+            </ul>
         </div>
         <div class="name card">
             <p class="card-title">NAME</p>
@@ -32,11 +52,11 @@
             <p class="card-title">PAYMENT</p>
             <div class="card-number-group">
                 <label for="card-number" class="card-number-label">Card Number</label>
-                <input id="card-number" class="card-number-input" type="text" />
+                <input id="card-number" class="card-number-input" type="number" />
             </div>
             <div class="cvv-number-group">
                 <label for="cvv-number" class="cvv-number-label">Cvv Number</label>
-                <input id="cvv-number" class="cvv-number-input" type="text" />
+                <input id="cvv-number" class="cvv-number-input" type="number" />
             </div>
         </div>
     </section>

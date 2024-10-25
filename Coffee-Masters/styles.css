@@ -1,18 +1,13 @@
-.nunito-<uniquifier> {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 body {
     margin: 0px;
     background-color: #fefefe;
+    display: grid;
+    grid-template-rows: auto
 }
 
 .nav-bar {
     background-color: #412315;
-    height: 10%;
+    height: 72px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -33,8 +28,8 @@ body {
 .order-details {
     height: 40%;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 30% 15% 30% auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
     gap: 5%;
     padding:5%;
 }
@@ -46,6 +41,7 @@ body {
     box-shadow: 0 1px 25px #dedede, 0 1px 9px #22222f;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 8px;
 }
 
 .card-title {
@@ -58,14 +54,51 @@ body {
    grid-row-end: 4;
 }
 
+.item-list li {
+    border-bottom: 1px solid #91653c;
+}
+
+.item-list li:last-child {
+    border: none;
+}
+
+.item-list p {
+    margin: 6px 0px 6px 0px;
+}
+.three-column {
+    display: grid;
+    grid-template-columns: [quantity] 10% [description] auto [price] 30%;
+}
+
+.quantity {
+    grid-column-start: quantity;
+}
+
+.description {
+    grid-column-start: description;
+}
+
+.price {
+    grid-column-start: price; 
+}
+
+.extra {
+    color: #91653c;
+    font-size: 16px;
+    grid-column-start: description;
+}
+
 .name {
-   grid-column-start: 2;
-   grid-column-end: 4;
-   grid-row-start: 1;
-   grid-row-end: 2;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .order-name-group {
+    width: 100%;
    position: relative;
    display: inline-block;
 }
@@ -76,27 +109,31 @@ body {
      font-size: 16px;
      position: absolute;
      top: -10px;
-     left: 15px;
+     left: 25px;
 }
 
 .order-name-input {
+    font-size: 14px;
+    width: 100%;
     background-color: #eee1d5;
     border-color: #91653c;
     border-radius: 28px;
-    padding: 8px;
+    padding: 8px 16px 8px 16px;
 }
 
 .payment {
-    display: block;
+    display: grid;
+    grid-template-rows: auto auto auto;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 5;
 }
 
 .card-number-group {
+    width: 100%;
     position: relative;
-   display: inline-block;
+    display: inline-block;
 }
 
 .card-number-label {
@@ -105,17 +142,20 @@ body {
      font-size: 16px;
      position: absolute;
      top: -10px;
-     left: 15px;
+     left: 25px;
 }
 
 .card-number-input {
+    font-size: 14px;
+    width: 100%;
     background-color: #eee1d5;
     border-color: #91653c;
     border-radius: 28px;
-    padding: 8px;
+    padding: 8px 16px 8px 16px;
 }
 
 .cvv-number-group {
+    width: 100%;
     position: relative;
     display: inline-block;
 }
@@ -126,14 +166,15 @@ body {
      font-size: 16px;
      position: absolute;
      top: -10px;
-     left: 15px;
+     left: 25px;
 }
 
 .cvv-number-input {
+    font-size: 14px;
     background-color: #eee1d5;
     border-color: #91653c;
     border-radius: 28px;
-    padding: 8px;
+    padding: 8px 16px 8px 16px;
 }
 
 .checkout {
@@ -167,7 +208,7 @@ body {
 .btn-order {
     display: block;
     width: 80%;
-    height: 5%;
+    height: 48px;
     background-color: #deb993;
     font-size: 18px;
     border: none;
